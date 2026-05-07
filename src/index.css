@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #0b0b0f;
+  color: white;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10vw;
+}
+
+.tag {
+  letter-spacing: 2px;
+  opacity: 0.6;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 72px;
+  margin: 10px 0;
+}
+
+.subtitle {
+  max-width: 500px;
+  opacity: 0.7;
+  line-height: 1.5;
+}
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 12px;
+}
+
+button {
+  padding: 12px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: white;
+  color: black;
+}
