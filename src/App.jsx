@@ -1,39 +1,12 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import Photography from "./Pages/Photography";
 
 export default function App() {
   return (
-    <div>
-      <Nav />
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/photography" element={<Photography />} />
-      </Routes>
-    </div>
-  );
-}
-function Nav() {
-  return (
-    <nav style={{ display: "flex", gap: "20px", padding: "20px" }}>
-      <Link to="/">Home</Link>
-      <Link to="/photography">Photography</Link>
-    </nav>
-  );
-}
-function Home() {
-  return (
-    <div>
-      <h1>Home</h1>
-      <p>Creative portfolio intro goes here.</p>
-    </div>
-  );
-}
-
-function Photography() {
-  return (
-    <div>
-      <h1>Photography</h1>
-      <p>Your gallery will go here.</p>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/photography" element={<Photography />} />
+    </Routes>
   );
 }
