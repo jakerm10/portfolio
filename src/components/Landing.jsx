@@ -1,4 +1,4 @@
-import Webbie from "../assets/images/Webbie.png";
+import Webbie from "../assets/images/Webbie.jpeg";
 import "../css/Landing.css";
 
 export default function Landing(){
