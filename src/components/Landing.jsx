@@ -1,6 +1,6 @@
-export default function Hero(){
+export default function Landing(){
     return(
-        <section className="hero">
+        <section className="Landing">
             <p>Photography</p>
             <h1>Jake Moore</h1>
         </section>
