@@ -1,9 +1,9 @@
-import Hero from "../components/Landing";
+import Landing from "../components/Landing";
 
 export default function Photography(){
     return(
         <div>
-            <Hero />
+            <Landing />
         </div>
     )
 }
