@@ -1,11 +1,12 @@
 .landing{
-    display: flex;
     gap: 40px;
     align-items: flex-start;
 }
 
 .webbie{
     width: 800px;
+    height: auto;
+    display: block;
 }
 
 .imagetextcontainer{
@@ -16,16 +17,24 @@
     position: relative;
 }
 
+.stack{
+    display: grid;
+}
 
+.stack > *{
+    grid-area: 1/1;
+}
 
 .landing-text{
+    z-index: 1;
+    
+    position: absolute;
+    text-align: right;
+    top: 60px;
+    right: 20px;
+    
     letter-spacing: -10px;
     line-height: 310px;
-    position: absolute;
-    bottom: -90px;
-    left: 570px;
-    flex: 1;
-    text-align: right;
     font-size: 250px;
     color: rgba(1,43,85,1);
     font-family: "lexia-variable", sans-serif;
@@ -33,17 +42,11 @@
 }
 
 .landing-overlay{
-    letter-spacing: -10px;
-    line-height: 310px;
-    position: absolute;
-    bottom: -90px;
-    left: 570px;
-    flex: 1;
-    text-align: right;
-    font-size: 250px;
+    z-index: 2;
+
     color: white;
-    font-family: "lexia-variable", sans-serif;
-    font-variation-settings: "wght" 500;
-    clip-path: inset(0 50% 0 0);
-    mix-blend-mode: difference;
+    position: absolute;
+    text-align: right;
+    top: 60px;
+    right: 20px;
 }
