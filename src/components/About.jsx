@@ -1,0 +1,3 @@
+{/* <p>Hi! My name is Jake Moore and I am a Creative Content intern for the University Of Colorado Boulder, studying Computer Science with a minor in Statistics and earning my certificate of Engineering Leadership.
+                   This portfolio is dual purpose, showing off my photography and my software development skills. I captured and edited all the pictures and videos on this website, most of which came from my time working at CU Boulder.
+                   I also fully developed this website using React + Vite, and hosted it with Cloudflare.</p> */}

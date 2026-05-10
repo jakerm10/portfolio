@@ -1,3 +1,49 @@
+.landing{
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
 .webbie{
     width: 800px;
+}
+
+.imagetextcontainer{
+    position: relative;
+}
+
+.text-wrapper{
+    position: relative;
+}
+
+
+
+.landing-text{
+    letter-spacing: -10px;
+    line-height: 310px;
+    position: absolute;
+    bottom: -90px;
+    left: 570px;
+    flex: 1;
+    text-align: right;
+    font-size: 250px;
+    color: rgba(1,43,85,1);
+    font-family: "lexia-variable", sans-serif;
+    font-variation-settings: "wght" 500;
+}
+
+.landing-overlay{
+    letter-spacing: -10px;
+    line-height: 310px;
+    position: absolute;
+    bottom: -90px;
+    left: 570px;
+    flex: 1;
+    text-align: right;
+    font-size: 250px;
+    color: white;
+    font-family: "lexia-variable", sans-serif;
+    font-variation-settings: "wght" 500;
+    clip-path: inset(0 50% 0 0);
+    mix-blend-mode: difference;
 }
