@@ -1,52 +1,53 @@
-.landing{
-    gap: 40px;
-    align-items: flex-start;
+.landing {
+    width: 100%;
+    height: auto;
 }
 
-.webbie{
-    width: 800px;
+.stack {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.stack > img{
+    grid-area: 1/1;
+}
+
+.stack > .text-layer{
+    grid-area: 1/1;
+    height: 100%;
+}
+
+.webbie {
+    width: 67%;
     height: auto;
     display: block;
 }
 
-.imagetextcontainer{
-    position: relative;
-}
-
-.text-wrapper{
-    position: relative;
-}
-
-.stack{
-    display: grid;
-}
-
-.stack > *{
+.text-layer {
     grid-area: 1/1;
+    height: 684px; /* match the fixed text scroll height */
 }
 
-.landing-text{
-    z-index: 1;
-    
+.landing-text {
     position: absolute;
-    text-align: right;
     top: 60px;
     right: 20px;
-    
     letter-spacing: -10px;
     line-height: 310px;
     font-size: 250px;
-    color: rgba(1,43,85,1);
     font-family: "lexia-variable", sans-serif;
     font-variation-settings: "wght" 500;
+    white-space: nowrap;
 }
 
-.landing-overlay{
-    z-index: 2;
-
-    color: white;
-    position: absolute;
+.landing-text.dark {
+    z-index: 1;
+    color: rgba(1, 43, 85, 1);
     text-align: right;
-    top: 60px;
-    right: 20px;
+}
+
+.landing-text.light {
+    z-index: 2;
+    color: white;
+    text-align: right;
 }
