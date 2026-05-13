@@ -1,9 +1,9 @@
-import Photos from "../components/Photos";
+import { verts } from "../components/Photos.js";
 
 export default function Photography(){
     return(
-        <div>
-            <Photos />
-        </div>
+        <p>
+            hi
+        </p>
     )
 }
