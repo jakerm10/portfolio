@@ -1,6 +1,7 @@
 .landing {
     width: 100%;
     height: auto;
+    overflow-x: hidden;
 }
 
 .stack {
@@ -19,8 +20,10 @@
 
 .webbie {
     width: 67%;
-    height: auto;
+    height: 60%;
     display: block;
+    object-fit: cover;
+    object-position: center 35%;
 }
 
 .text-layer {
@@ -30,13 +33,13 @@
 
 .landing-text {
     position: absolute;
-    top: 60px;
-    right: 20px;
-    letter-spacing: -10px;
-    line-height: 310px;
-    font-size: 250px;
+    top: 200px;
+    right: 60px;
+    letter-spacing: 0px;
+    line-height: 250px;
+    font-size: 270px;
     font-family: "lexia-variable", sans-serif;
-    font-variation-settings: "wght" 500;
+    font-variation-settings: "wght" 550;
     white-space: nowrap;
 }
 
@@ -51,3 +54,5 @@
     color: white;
     text-align: right;
 }
+
+
