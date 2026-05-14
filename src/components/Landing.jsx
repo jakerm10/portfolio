@@ -1,13 +1,18 @@
 import Webbie from "../assets/images/background.jpg";
 import "../css/Landing.css";
 import { useEffect, useRef, useState, useCallback } from "react";
+import { CircleArrowDown } from 'lucide-react';
 
 
 
 export default function Landing() {
     const imageRef = useRef(null);
+    const arrowRef = useRef(null);
     const [clipRight, setClipRight] = useState(0);
     const [clipBottom, setClipBottom] = useState(9999);
+    const [cliparrow, setClipArrow]=useState(0);
+
+    
 
     const updateClip = useCallback(() => {
         const img = imageRef.current; 
@@ -18,9 +23,13 @@ export default function Landing() {
         const imageRightEdge = img.offsetLeft + img.offsetWidth;
         const lightText = stack.querySelector('.landing-text.light');
         const adjustedRight = imageRightEdge - lightText.offsetLeft;
+
+        const arrowTop = arrowRef.current ? arrowRef.current.offsetTop : 0;
+        const clipInsideArrow = renderedHeight - arrowTop;
     
         setClipRight(adjustedRight);
-        setClipBottom(renderedHeight-18);
+        setClipBottom(renderedHeight-157);
+        setClipArrow(clipInsideArrow+43);
     }, []);
 
     useEffect(() => {
@@ -36,6 +45,13 @@ export default function Landing() {
         };
     }, [updateClip]);
 
+    const [scrollval, updateScrollVal] = useState(0); //current state, update func, useState(default val)
+    useEffect(()=>{ //runs on every render, when value changes runs
+        const handleScroll = () =>updateScrollVal(window.scrollY);
+        window.addEventListener('scroll',handleScroll);
+        return ()=>window.removeEventListener('scroll',handleScroll);
+    },[]);
+
     return (
         <section className="landing">
             <div className="stack">
@@ -48,8 +64,12 @@ export default function Landing() {
                         Jake<br />Moore
                     </div>
                 </div>
+                <CircleArrowDown className="arrowdark"  size={52} style={{opacity: 1-scrollval/300}}/>
+                <div ref={arrowRef} className="arrow">
+                    <CircleArrowDown size={52} style={{opacity: 1-scrollval/300, clipPath: `polygon(0px 0px, 100% 0px, 100% ${cliparrow}px, 0px ${cliparrow}px)`}}/>
+                </div>
             </div>
-            <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>test
+            <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>text
         </section>
     );
 }
