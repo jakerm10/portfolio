@@ -1,17 +1,17 @@
 import "../css/Footer.css";
-import {verts} from './Photos.js';
+import {vertst} from './Photos.js';
 import {useState} from "react";
 
 export default function Footer(){
     const[rand, setRand]=useState(()=>{
         const newnums=[];
         while(newnums.length<10){
-            const num=Math.floor(Math.random()*(verts.length));
+            const num=Math.floor(Math.random()*(vertst.length));
             if(!newnums.includes(num)){
                 newnums.push(num);
             }
         }
-        return newnums.map(i=>verts[i]);
+        return newnums.map(i=>vertst[i]);
     });
     return(
         <footer className="footer">

@@ -1,4 +1,4 @@
-import { verts } from "../components/Photos.js";
+import { vertst } from "../components/Photos.js";
 
 export default function Photography(){
     return(

@@ -2,6 +2,7 @@
     width: 100%;
     height: auto;
     overflow-x: hidden;
+    will-change: background-color;
 }
 
 .stack {
@@ -61,6 +62,7 @@
     bottom: 20px;
     left: 50%;
     color: white;
+    will-change: opactiy;
 }
 
 .arrowdark{
@@ -69,4 +71,9 @@
     bottom: 23px;
     left: 50%;
     color: rgba(1, 43, 85, 1);
+    will-change: opactiy;
+}
+
+.info{
+    color:white
 }

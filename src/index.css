@@ -1,4 +1,11 @@
 body{
     margin: 0px;
+    padding: 0px;
 }
 
+.footer{
+    position: relative;
+}
+.footer img{
+    vertical-align: top;
+}

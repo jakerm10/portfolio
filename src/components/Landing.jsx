@@ -45,15 +45,30 @@ export default function Landing() {
         };
     }, [updateClip]);
 
-    const [scrollval, updateScrollVal] = useState(0); //current state, update func, useState(default val)
-    useEffect(()=>{ //runs on every render, when value changes runs
-        const handleScroll = () =>updateScrollVal(window.scrollY);
-        window.addEventListener('scroll',handleScroll);
-        return ()=>window.removeEventListener('scroll',handleScroll);
-    },[]);
+
+    const arrowDarkRef = useRef(null);
+    const sectionRef = useRef(null);
+    useEffect(() => {
+        let tick = false;
+        const handleScroll = () => {
+            if (!tick) {
+                requestAnimationFrame(() => {
+                    const alpha = Math.min(1, window.scrollY / 500);
+                    const beta = Math.max(0, 1 - window.scrollY / 300);
+                    if (sectionRef.current) sectionRef.current.style.backgroundColor = `rgba(1,43,85,${alpha})`;
+                    if (arrowRef.current) arrowRef.current.style.opacity = beta;
+                    if (arrowDarkRef.current) arrowDarkRef.current.style.opacity = beta;
+                    tick = false;
+                });
+                tick = true;
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     return (
-        <section className="landing">
+        <section className="landing" ref={sectionRef}>
             <div className="stack">
                 <img src={Webbie} ref={imageRef} className="webbie" onLoad={updateClip}/>
                 <div className="text-layer">
@@ -64,12 +79,18 @@ export default function Landing() {
                         Jake<br />Moore
                     </div>
                 </div>
-                <CircleArrowDown className="arrowdark"  size={52} style={{opacity: 1-scrollval/300}}/>
+                <div>
+                    <CircleArrowDown ref={arrowDarkRef} className="arrowdark" size={52}/>
+                </div>
                 <div ref={arrowRef} className="arrow">
-                    <CircleArrowDown size={52} style={{opacity: 1-scrollval/300, clipPath: `polygon(0px 0px, 100% 0px, 100% ${cliparrow}px, 0px ${cliparrow}px)`}}/>
+                    <CircleArrowDown size={52}/>
                 </div>
             </div>
-            <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>text
+            <br></br>
+            <br></br>
+            <div className="info">
+                
+            </div>
         </section>
     );
 }
