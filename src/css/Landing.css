@@ -8,15 +8,18 @@
 .stack {
     display: grid;
     grid-template-rows: auto;
+    padding-bottom: 0px;
 }
 
 .stack > img{
     grid-area: 1/1;
+    padding-bottom: 0px;
 }
 
 .stack > .text-layer{
     grid-area: 1/1;
     height: 100%;
+    padding-bottom: 0px;
 }
 
 .webbie {
@@ -29,7 +32,7 @@
 
 .text-layer {
     grid-area: 1/1;
-    height: 684px; /* match the fixed text scroll height */
+    height: 584px; /* match the fixed text scroll height */
 }
 
 .landing-text {
@@ -74,6 +77,58 @@
     will-change: opactiy;
 }
 
-.info{
-    color:white
+.container{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    width: auto;
+    gap:0%;
+    margin: 0;
+}
+
+.container h1{
+    margin:60px;
+    padding-top: 0px;
+    font-size: 100px;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.container p{
+    margin:0px;
+    padding-top: 0px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    font-family: "lexia-variable", sans-serif;
+    font-variation-settings: "wght" 300;
+    letter-spacing: 1px;
+    margin: 20%;
+    margin-top: 0%;
+    margin-bottom: 10%;
+}
+
+.phototext{
+    font-family: "condor-compressed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.codetext {
+    font-family: "anonymous-pro", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+    gap:2%;
+}
+
+.gondola{
+    height:40px;
+    width:40px;
 }
