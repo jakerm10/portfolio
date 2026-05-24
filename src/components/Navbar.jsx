@@ -5,8 +5,12 @@ export default function Navbar(){
     return( 
         <nav className="navbar">
             <Link to="/">Home</Link>  
-            Jake Moore
             <Link to="/Photography">Photography</Link>
+            Jake Moore
+            <Link to="/Process">My Process</Link>
+            <Link to="/Login">Login</Link>
+            
+            
         </nav>
     );
 }

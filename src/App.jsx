@@ -5,6 +5,8 @@ import Home from "./Pages/Home";
 import Photography from "./Pages/Photography";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Login from "./Pages/Login.jsx";
+import Process from "./Pages/Process.jsx";
 
 function preloadImages(srcArray) {
   return Promise.all(
@@ -32,6 +34,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/photography" element={<Photography />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Process" element={<Process />} />
       </Routes>
       <Footer key={location.pathname}/>
     </>

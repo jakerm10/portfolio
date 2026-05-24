@@ -9,6 +9,7 @@ import { IoMdMail } from "react-icons/io";
 
 
 
+
 export default function Landing() {
     const imageRef = useRef(null);
     const arrowRef = useRef(null);

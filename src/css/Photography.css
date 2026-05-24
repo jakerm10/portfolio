@@ -1,4 +1,53 @@
-.image{
-    width:2px;
-    height: auto;
+.gridimages{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: white;
+    padding: 0.25%;
+    padding-top: 0;
+    column-gap: 0.5%;
+    row-gap: 0.13%;
+}
+
+.imgcontainer{
+    position: relative;
+    overflow: hidden;
+}
+
+.images{
+    width: 100%;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: opacity 0.5s ease;
+}
+
+.textbox{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.text{
+    background-color: rgba(1,43,85,1);
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    color: white;
+    font-size: 200%;
+    padding: 3% 5%;
+    white-space: nowrap;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.imgcontainer:hover .images{
+    opacity: 0.5;
+}
+
+.imgcontainer:hover .textbox{
+    opacity: 1;
 }
