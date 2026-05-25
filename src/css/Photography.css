@@ -3,9 +3,10 @@
     grid-template-columns: repeat(4, 1fr);
     background-color: white;
     padding: 0.25%;
-    padding-top: 0;
+    padding-top: 2.7%;
     column-gap: 0.5%;
     row-gap: 0.13%;
+    padding-bottom: 4%;
 }
 
 .imgcontainer{
