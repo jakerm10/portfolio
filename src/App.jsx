@@ -50,7 +50,7 @@ export default function App() {
               <Route path="/photography" element={<Photography />} />
               <Route path="/Login" element={<Login />} />
               <Route path="/Process" element={<Process />} />
-              <Route path="/Account" element={<Account />} />
+              <Route path="/Account" element={<Account user={user}/>}  />
               <Route path="/photography/:id" element={<PhotoDetail />}/>
           </Routes>
           <Footer key={location.pathname}/>

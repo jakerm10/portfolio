@@ -99,6 +99,7 @@ export default function Landing() {
                     <p>Computer Science major at University of Colorado Boulder, specializing in databases, UI, and UX. Trying to make my life easier through code. Fun fact: I made this website!</p>
                 </div>
             </div>
+
             <div className="icons">
                 <a href="https://www.instagram.com/jakermphoto" target="_blank" rel="noopener noreferrer">
                     <FaInstagram size={40} color="white"/>

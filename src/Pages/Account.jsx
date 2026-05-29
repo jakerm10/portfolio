@@ -1,8 +1,9 @@
-import { auth } from '../firebase.js';   // your Firebase config file
+import { auth } from '../firebase.js';   //Firebase config file
 import { signOut } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
+import '../css/Account.css';
 
-export default function Account() {
+export default function Account({user}) {
     const navigate = useNavigate();
     const handleSignOut = async () => {
         await signOut(auth);
@@ -11,8 +12,8 @@ export default function Account() {
 
     return(
         <div className="spacing">
-            <h1>Test</h1>
-            <button onClick={handleSignOut}>Sign out</button>
+            <h1>Hello, {user?.displayName}</h1>
+            <button className="logoutbutton" onClick={handleSignOut}>Sign out</button>
         </div>
     );
 }
