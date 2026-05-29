@@ -16,3 +16,4 @@ const app = initializeApp(firebaseConfig);
 export const analytics = getAnalytics(app);
 export const auth = getAuth(app);
 export const googleProvider = new GoogleAuthProvider();
+console.log('projectId:', import.meta.env.VITE_FIREBASE_PROJECT_ID);
