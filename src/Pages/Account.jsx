@@ -16,4 +16,4 @@ export default function Account({user}) {
             <button className="logoutbutton" onClick={handleSignOut}>Sign out</button>
         </div>
     );
-}
+} 
