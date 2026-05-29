@@ -1,5 +1,5 @@
-import { vertsf } from "../components/Photos.js";
-import { horizsf } from "../components/Photos.js";
+import { vertst } from "../components/Photos.js";
+import { horizst } from "../components/Photos.js";
 import "../css/Photography.css";
 import { Link } from 'react-router-dom';
 
@@ -10,7 +10,7 @@ export default function Photography() {
 
             <Link to="/photography/anya-nelson">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[57]} alt="" />
+                <img className="images" src={vertst[57]} alt="" />
                 <div className="textbox">
                     <div className="text">Anya Nelson</div>
                 </div> 
@@ -19,7 +19,7 @@ export default function Photography() {
 
             <Link to="/photography/maddie">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[50]} alt="" />
+                <img className="images" src={vertst[50]} alt="" />
                 <div className="textbox">
                     <div className="text">Maddie Shoup</div>
                 </div>
@@ -28,7 +28,7 @@ export default function Photography() {
             
             <Link to="/photography/jillian">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[46]} alt="" />
+                <img className="images" src={vertst[46]} alt="" />
                 <div className="textbox">
                     <div className="text">Jillian Kane</div>
                 </div>
@@ -37,7 +37,7 @@ export default function Photography() {
 
             <Link to="/photography/johnny">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[37]} alt="" />
+                <img className="images" src={vertst[37]} alt="" />
                 <div className="textbox">
                     <div className="text">Johnny Homsy</div>
                 </div>
@@ -46,7 +46,7 @@ export default function Photography() {
 
             <Link to="/photography/faith">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[23]} alt="" />
+                <img className="images" src={vertst[23]} alt="" />
                 <div className="textbox">
                     <div className="text">Faith Leyba</div>
                 </div>
@@ -55,7 +55,7 @@ export default function Photography() {
 
             <Link to="/photography/sebi">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[31]} alt="" />
+                <img className="images" src={vertst[31]} alt="" />
                 <div className="textbox">
                     <div className="text">Sebastian Rancik</div>
                 </div>
@@ -64,7 +64,7 @@ export default function Photography() {
 
             <Link to="/photography/kanye">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[33]} alt="" />
+                <img className="images" src={vertst[33]} alt="" />
                 <div className="textbox">
                     <div className="text">Kanye Clary</div>
                 </div>
@@ -73,7 +73,7 @@ export default function Photography() {
 
             <Link to="/photography/deion">
             <div className="imgcontainer">
-                <img className="images deion" src={horizsf[0]} alt="" />
+                <img className="images deion" src={horizst[0]} alt="" />
                 <div className="textbox">
                     <div className="text">Deion Sanders</div>
                 </div>
@@ -82,7 +82,7 @@ export default function Photography() {
 
             <Link to="/photography/kaidon">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[3]} alt="" />
+                <img className="images" src={vertst[3]} alt="" />
                 <div className="textbox">
                     <div className="text">Kaidon Salter</div>
                 </div>
@@ -91,7 +91,7 @@ export default function Photography() {
 
             <Link to="/photography/osu">
             <div className="imgcontainer">
-                <img className="images huddle" src={horizsf[3]} alt="" />
+                <img className="images huddle" src={horizst[3]} alt="" />
                 <div className="textbox">
                     <div className="text">OSU Men's Basketball Team</div>
                 </div>
@@ -100,7 +100,7 @@ export default function Photography() {
 
             <Link to="/photography/simeon">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[4]} alt="" />
+                <img className="images" src={vertst[4]} alt="" />
                 <div className="textbox">
                     <div className="text">Simeon Price</div>
                 </div>
@@ -109,7 +109,7 @@ export default function Photography() {
 
             <Link to="/photography/sophie">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[8]} alt="" />
+                <img className="images" src={vertst[8]} alt="" />
                 <div className="textbox">
                     <div className="text">Sophie Spalding</div>
                 </div>
@@ -118,7 +118,7 @@ export default function Photography() {
 
             <Link to="/photography/sebi1">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[10]} alt="" />
+                <img className="images" src={vertst[10]} alt="" />
                 <div className="textbox">
                     <div className="text">Sebastian Rancik</div>
                 </div>
@@ -127,7 +127,7 @@ export default function Photography() {
 
             <Link to="/photography/ij">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[16]} alt="" />
+                <img className="images" src={vertst[16]} alt="" />
                 <div className="textbox">
                     <div className="text">Isaiah Johnson</div>
                 </div>
@@ -136,7 +136,7 @@ export default function Photography() {
 
             <Link to="/photography/will">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[20]} alt="Anya Nelson" />
+                <img className="images" src={vertst[20]} alt="Anya Nelson" />
                 <div className="textbox">
                     <div className="text">Will Sheppard</div>
                 </div>
@@ -145,7 +145,7 @@ export default function Photography() {
 
             <Link to="/photography/ig">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[29]} alt="" />
+                <img className="images" src={vertst[29]} alt="" />
                 <div className="textbox">
                     <div className="text">Isaiah Givens</div>
                 </div>
@@ -154,7 +154,7 @@ export default function Photography() {
 
             <Link to="/photography/caity">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[0]} alt="" />
+                <img className="images" src={vertst[0]} alt="" />
                 <div className="textbox">
                     <div className="text">Caity Brower</div>
                 </div>
@@ -163,7 +163,7 @@ export default function Photography() {
 
             <Link to="/photography/jess">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[49]} alt="Anya Nelson" />
+                <img className="images" src={vertst[49]} alt="Anya Nelson" />
                 <div className="textbox">
                     <div className="text">Jess Peluso</div>
                 </div>
@@ -172,7 +172,7 @@ export default function Photography() {
 
             <Link to="/photography/jace">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[1]} alt="" />
+                <img className="images" src={vertst[1]} alt="" />
                 <div className="textbox">
                     <div className="text">Jace Holley</div>
                 </div>
@@ -181,7 +181,7 @@ export default function Photography() {
 
             <Link to="/photography/tacko">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[13]} alt="" />
+                <img className="images" src={vertst[13]} alt="" />
                 <div className="textbox">
                     <div className="text">Fawaz "Tacko" Ifaola</div>
                 </div>
@@ -190,7 +190,7 @@ export default function Photography() {
 
             <Link to="/photography/brooke">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[42]} alt="" />
+                <img className="images" src={vertst[42]} alt="" />
                 <div className="textbox">
                     <div className="text">Brooke Goerish</div>
                 </div>
@@ -199,7 +199,7 @@ export default function Photography() {
 
             <Link to="/photography/andrew">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[12]} alt="" />
+                <img className="images" src={vertst[12]} alt="" />
                 <div className="textbox">
                     <div className="text">Andrew Crawford</div>
                 </div>
@@ -208,7 +208,7 @@ export default function Photography() {
 
             <Link to="/photography/lily">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[21]} alt="" />
+                <img className="images" src={vertst[21]} alt="" />
                 <div className="textbox">
                     <div className="text">Lily Dwinell</div>
                 </div>
@@ -217,7 +217,7 @@ export default function Photography() {
 
             <Link to="/photography/andrew1">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[26]} alt="Anya Nelson" />
+                <img className="images" src={vertst[26]} alt="Anya Nelson" />
                 <div className="textbox">
                     <div className="text">Andrew Crawford</div>
                 </div>
@@ -226,7 +226,7 @@ export default function Photography() {
 
             <Link to="/photography/tacko1">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[27]} alt="" />
+                <img className="images" src={vertst[27]} alt="" />
                 <div className="textbox">
                     <div className="text">Fawaz "Tacko" Ifaola</div>
                 </div>
@@ -235,7 +235,7 @@ export default function Photography() {
 
             <Link to="/photography/rian">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[11]} alt="" />
+                <img className="images" src={vertst[11]} alt="" />
                 <div className="textbox">
                     <div className="text">Rian Finley</div>
                 </div>
@@ -244,7 +244,7 @@ export default function Photography() {
 
             <Link to="/photography/nick">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[30]} alt="" />
+                <img className="images" src={vertst[30]} alt="" />
                 <div className="textbox">
                     <div className="text">Nick Bianco</div>
                 </div>
@@ -253,7 +253,7 @@ export default function Photography() {
 
             <Link to="/photography/rachel">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[51]} alt="" />
+                <img className="images" src={vertst[51]} alt="" />
                 <div className="textbox">
                     <div className="text">Rachel Kennedy</div>
                 </div>
@@ -262,7 +262,7 @@ export default function Photography() {
 
             <Link to="/photography/nick1">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[39]} alt="" />
+                <img className="images" src={vertst[39]} alt="" />
                 <div className="textbox">
                     <div className="text">Nick Bianco</div>
                 </div>
@@ -271,7 +271,7 @@ export default function Photography() {
 
             <Link to="/photography/mila">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[56]} alt="" />
+                <img className="images" src={vertst[56]} alt="" />
                 <div className="textbox">
                     <div className="text">Mila Stanojevic</div>
                 </div>
@@ -280,7 +280,7 @@ export default function Photography() {
 
             <Link to="/photography/steamboat">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[40]} alt="" />
+                <img className="images" src={vertst[40]} alt="" />
                 <div className="textbox">
                     <div className="text">Steamboat Springs</div>
                 </div>
@@ -289,7 +289,7 @@ export default function Photography() {
 
             <Link to="/photography/jace1">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[24]} alt="" />
+                <img className="images" src={vertst[24]} alt="" />
                 <div className="textbox">
                     <div className="text">Jace Holley</div>
                 </div>
@@ -298,7 +298,7 @@ export default function Photography() {
 
             <Link to="/photography/jordan">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[43]} alt="Anya Nelson" />
+                <img className="images" src={vertst[43]} alt="Anya Nelson" />
                 <div className="textbox">
                     <div className="text">Jordan Whiteaker</div>
                 </div>
@@ -307,7 +307,7 @@ export default function Photography() {
 
             <Link to="/photography/reese">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[44]} alt="" />
+                <img className="images" src={vertst[44]} alt="" />
                 <div className="textbox">
                     <div className="text">Reese Plummer</div>
                 </div>
@@ -316,7 +316,7 @@ export default function Photography() {
 
             <Link to="/photography/boulder">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[45]} alt="" />
+                <img className="images" src={vertst[45]} alt="" />
                 <div className="textbox">
                     <div className="text">Boulder Colorado</div>
                 </div>
@@ -325,7 +325,7 @@ export default function Photography() {
 
             <Link to="/photography/aya">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[48]} alt="" />
+                <img className="images" src={vertst[48]} alt="" />
                 <div className="textbox">
                     <div className="text">Aya El Sayed</div>
                 </div>
@@ -334,7 +334,7 @@ export default function Photography() {
 
             <Link to="/photography/nick2">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[58]} alt="" />
+                <img className="images" src={vertst[58]} alt="" />
                 <div className="textbox">
                     <div className="text">Nick Bianco</div>
                 </div>
@@ -343,7 +343,7 @@ export default function Photography() {
 
             <Link to="/photography/mbb">
             <div className="imgcontainer">
-                <img className="images handshake" src={horizsf[1]} alt="" />
+                <img className="images handshake" src={horizst[1]} alt="" />
                 <div className="textbox">
                     <div className="text">CU Men's Basketball Team</div>
                 </div>
@@ -352,7 +352,7 @@ export default function Photography() {
 
             <Link to="/photography/brooke1">
             <div className="imgcontainer">
-                <img className="images" src={vertsf[35]} alt="" />
+                <img className="images" src={vertst[35]} alt="" />
                 <div className="textbox">
                     <div className="text">Brooke Goerish</div>
                 </div>
