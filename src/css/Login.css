@@ -8,4 +8,85 @@
 .login h1 {
     margin: 0;
     padding: 0;
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+
+
+label{
+    font-size: 30px;
+    color: rgba(1,43,85,1);
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+}
+
+.inputrow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.inputrow label{
+    line-height: 30px;  /* match input height */
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.emailinput{
+    line-height: 30px;
+    height: 25px;
+    padding: 0;
+    margin: 0;
+    border: 2px solid rgba(1,43,85,1);
+    border-radius: 5px;
+}
+
+.loginbutton{
+    height: 70px;
+    width: 200px;
+    border: 2px solid rgba(1,43,85,1);
+    font-size: 40px;
+    color: white;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    background-color: rgba(1,43,85,1);
+    border-radius: 10px;
+}
+
+.googlesignin{
+    height:60px;
+    width: 270px;
+    font-size: 22px;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    color: rgba(1,43,85,1);
+    background-color: white;
+    border-radius: 4px;
+    border: 3px solid rgba(1,43,85,1);
+}
+
+.needaccount{
+    height: 50px;
+    width: 200px;
+    border: 2px solid rgba(1,43,85,1);
+    font-size: 30px;
+    color: white;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    background-color: rgba(1,43,85,1);
+    border-radius: 10px;
+}
+
+.needaccounttext{
+    font-size: 30px;
+    color: rgba(1,43,85,1);
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+}
+
+.errormessage{
+    padding: 0;
+    margin: 0;
+}
+
+.errormessage p{
+    padding: 0;
+    margin: 0;
+    padding-top: 3%;
 }

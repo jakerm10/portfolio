@@ -13,7 +13,9 @@ export default function Account({user}) {
     return(
         <div className="spacing">
             <h1>Hello, {user?.displayName}</h1>
+            <br></br>
             <button className="logoutbutton" onClick={handleSignOut}>Sign out</button>
+            <br></br>
         </div>
     );
 }  

@@ -93,7 +93,7 @@ export default function Photography() {
             <div className="imgcontainer">
                 <img className="images huddle" src={horizst[3]} alt="" />
                 <div className="textbox">
-                    <div className="text">OSU Men's Basketball Team</div>
+                    <div className="text">OSU Men's <br></br>Basketball Team</div>
                 </div>
             </div>
             </Link>
@@ -345,7 +345,7 @@ export default function Photography() {
             <div className="imgcontainer">
                 <img className="images handshake" src={horizst[1]} alt="" />
                 <div className="textbox">
-                    <div className="text">CU Men's Basketball Team</div>
+                    <div className="text">Colorado Men's<br></br>Basketball Team</div>
                 </div>
             </div>
             </Link>
