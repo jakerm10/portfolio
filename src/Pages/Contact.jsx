@@ -30,6 +30,9 @@ export default function Contact({user}) {
         e.preventDefault();
         
         try {
+            console.log("Service:", import.meta.env.VITE_EMAILJS_SERVICE_ID);
+            console.log("Template:", import.meta.env.VITE_EMAILJS_TEMPLATE_ID);
+            console.log("Public:", import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
             await emailjs.send(
                 import.meta.env.VITE_EMAILJS_SERVICE_ID,
                 import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
@@ -68,10 +71,10 @@ export default function Contact({user}) {
                 </label>
                 <label>
                     Inquiry Type: &nbsp;
-                    <select id="reason" name="reason" onChange={handleReasonChange}>
-                        <option value={reason}>Booking</option>
-                        <option value={reason}>Account</option>
-                        <option value={reason}>Other</option>
+                    <select id="reason" name="reason" value={reason} onChange={handleReasonChange}>
+                        <option value="Booking">Booking</option>
+                        <option value="Account">Account</option>
+                        <option value="Other">Other</option>
                     </select>
                 </label>
                 <label>
