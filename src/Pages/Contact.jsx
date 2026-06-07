@@ -38,7 +38,8 @@ export default function Contact({user}) {
                     name: name,
                     email: email,
                     message: message,
-                    phone: phone
+                    phone: phone,
+                    reason: reason
                 },
                 import.meta.env.VITE_EMAILJS_PUBLIC_KEY 
             );
