@@ -25,27 +25,32 @@ export default function Login() {
                     password
                 );
             } else {
+                console.log("Creating account");
                 const cred = await createUserWithEmailAndPassword(
                     auth,
                     email,
                     password
                 );
+                console.log("Account created");
                 await setDoc(
                     doc(db, "users", cred.user.uid),
                     {
                         email: cred.user.email,
-                        displayName: "",
+                        name: "",
                         bio: "",
                         profilePicture: "",
-                        major: "",
+                        phone: "",
                         graduationYear: "",
                         createdAt: new Date()
                     }
                 );
+                console.log("Firestore document created");
             }
-
+            console.log("Navigating");
             navigate("/");
         } catch (err) {
+            console.error("Code:", err.code);
+        console.error("Message:", err.message);
             let message;
             console.log(err)
             switch(err.code){
@@ -59,8 +64,14 @@ export default function Login() {
                 case "auth/missing-password":
                     message="Missing password."
                 break;
+                case "auth/email-already-in-use":
+                    message="Email is already in."
+                break;
                 case "auth/invalid-credential":
                     message="Incorrect password."
+                break;
+                case "auth/password-does-not-meet-requirements":
+                    message="Your password does not meet the requirements. It must contain at least 8 characters,\n an upper case character, and a number."
                 break;
                 default:
                     message="Something unexpected happened."
@@ -80,12 +91,12 @@ export default function Login() {
                 doc(db, "users", result.user.uid),
                 {
                     email: result.user.email,
-                    displayName:
+                    name:
                         result.user.displayName || "",
                     profilePicture:
                         result.user.photoURL || "",
                     bio: "",
-                    major: "",
+                    phone: "",
                     graduationYear: "",
                     createdAt: new Date()
                 },
@@ -117,7 +128,7 @@ export default function Login() {
             </div>
 
             <div className="errormessage">
-                {error && <p>{error} Please try again.</p>}
+                {error && <p className="error">{error} Please try again.</p>}
             </div>
             
 
@@ -141,7 +152,7 @@ export default function Login() {
             </div>
             <br></br>
             <button className="needaccount" onClick={() => setIsLogin(!isLogin)}>
-                {isLogin ? "Sign up" : "Login"}
+                {isLogin ? "Sign up" : "Log in"}
             </button>
             <br></br><br></br>
         </div>

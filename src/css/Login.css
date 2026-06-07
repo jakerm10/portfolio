@@ -90,3 +90,7 @@ label{
     margin: 0;
     padding-top: 3%;
 }
+
+.error {
+    white-space: pre-line;
+}

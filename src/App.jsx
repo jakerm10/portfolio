@@ -6,6 +6,7 @@ import Photography from "./Pages/Photography";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Login from "./Pages/Login.jsx";
+import Contact from "./Pages/Contact.jsx";
 import Process from "./Pages/Process.jsx";
 import Account from "./Pages/Account.jsx";
 import PhotoDetail from "./Pages/PhotoDetail";
@@ -51,6 +52,7 @@ export default function App() {
               <Route path="/Login" element={<Login />} />
               <Route path="/Process" element={<Process />} />
               <Route path="/Account" element={<Account user={user}/>}  />
+              <Route path="/Contact" element={<Contact user={user}/>}  />
               <Route path="/photography/:id" element={<PhotoDetail />}/>
           </Routes>
           <Footer key={location.pathname}/>
