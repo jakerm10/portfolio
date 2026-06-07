@@ -43,7 +43,7 @@ export default function Contact({user}) {
                     message: message,
                     phone: phone
                 },
-                import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+                import.meta.env.VITE_EMAILJS_PUBLIC_KEY 
             );
             alert('Message sent!');
         } catch (err) {
