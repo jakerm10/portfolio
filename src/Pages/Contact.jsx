@@ -31,6 +31,7 @@ export default function Contact({user}) {
         
         try {
             console.log(import.meta.env);
+            
             console.log("Service:", import.meta.env.VITE_EMAILJS_SERVICE_ID);
             console.log("Template:", import.meta.env.VITE_EMAILJS_TEMPLATE_ID);
             console.log("Public:", import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
