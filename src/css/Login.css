@@ -39,6 +39,7 @@ label{
     margin: 0;
     border: 2px solid rgba(1,43,85,1);
     border-radius: 5px;
+    text-indent: 4px;
 }
 
 .loginbutton{
@@ -85,7 +86,7 @@ label{
     margin: 0;
 }
 
-.errormessage p{
+.errormessage p{ 
     padding: 0;
     margin: 0;
     padding-top: 3%;

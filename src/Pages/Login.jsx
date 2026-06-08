@@ -120,7 +120,7 @@ export default function Login() {
                 <input className="emailinput" type="email" placeholder=" email@domain.com" value={email} onChange={(e) => setEmail(e.target.value)} />
             </div>
 
-            <br></br>
+            <br></br> 
 
             <div className="inputrow">
                 <label>Password:</label>

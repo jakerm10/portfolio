@@ -1,5 +1,97 @@
-h1{
-    margin: 0;
+.title {
     padding: 0;
+    margin: 0;
     padding-top: 3%;
 }
+ .formclass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    gap: 10px;
+ }
+
+ .formclass label{
+    line-height: 30px;
+    height: 25px;
+    padding: 0;
+    margin: 0;
+    border: 2px solid rgba(1,43,85,1);
+    border-radius: 5px;
+ }
+
+ .formclass input{
+    line-height: 30px;
+    height: 25px;
+    padding: 0;
+    margin: 0;
+    border: 2px solid rgba(1,43,85,1);
+    border-radius: 5px;
+    text-indent: 4px;
+    color:rgba(1,43,85,1);
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+ }
+
+ .namebox{
+    width: 175px;
+ }
+
+ .emailbox{
+    width: 200px;
+ }
+
+ .phonebox{
+    width: 100px;
+ }
+
+ .inquirybox{
+    width: 85px;
+    color:rgba(1,43,85,1);
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    height:30px;
+    border: 2px solid rgba(1,43,85,1);
+    border-radius: 5px;
+ }
+
+ .messagebox{
+    width: 375px;
+    resize: none;
+    min-height: 25px;
+    padding: 0;
+    margin: 0;
+    border: 2px solid rgba(1,43,85,1);
+    border-radius: 5px;
+    text-indent: 4px;
+    color:rgba(1,43,85,1);
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+ }
+
+ p{
+    margin: 0;
+    padding: 0;
+ }
+
+ .subtext{
+    margin: 0;
+    padding: 0;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+    font-size: 20px;
+ }
+
+.submitc{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+ .submitb{
+    height: 70px;
+    width: 200px;
+    border: 2px solid rgba(1,43,85,1);
+    font-size: 40px;
+    color: white;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    background-color: rgba(1,43,85,1);
+    border-radius: 10px;
+ }
