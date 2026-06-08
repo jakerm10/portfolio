@@ -15,3 +15,21 @@
     border-radius: 25px;
     border-width: 0;
 }
+
+.subhead{
+    margin: 0;
+    padding: 0;
+}
+
+.info{
+    margin: 0;
+    padding: 0;
+}
+
+.bottomtext{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    padding-top: 5%;
+    color: rgba(170,170,170,1);
+}

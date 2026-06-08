@@ -5,6 +5,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import "../css/Login.css";
+import { serverTimestamp } from "firebase/firestore";
 
 export default function Login() {
     const [email, setEmail] = useState("");
@@ -37,11 +38,9 @@ export default function Login() {
                     {
                         email: cred.user.email,
                         name: "",
-                        bio: "",
                         profilePicture: "",
                         phone: "",
-                        graduationYear: "",
-                        createdAt: new Date()
+                        createdAt: serverTimestamp()
                     }
                 );
                 console.log("Firestore document created");
@@ -95,10 +94,8 @@ export default function Login() {
                         result.user.displayName || "",
                     profilePicture:
                         result.user.photoURL || "",
-                    bio: "",
                     phone: "",
-                    graduationYear: "",
-                    createdAt: new Date()
+                    createdAt: serverTimestamp()
                 },
                 { merge: true }
             );

@@ -9,6 +9,7 @@ import Login from "./Pages/Login.jsx";
 import Contact from "./Pages/Contact.jsx";
 import Process from "./Pages/Process.jsx";
 import Account from "./Pages/Account.jsx";
+import AccountEdit from "./Pages/AccountEdit.jsx"
 import PhotoDetail from "./Pages/PhotoDetail";
 import { auth } from './firebase.js';
 import { onAuthStateChanged } from 'firebase/auth';
@@ -52,6 +53,7 @@ export default function App() {
               <Route path="/Login" element={<Login />} />
               <Route path="/Process" element={<Process />} />
               <Route path="/Account" element={<Account user={user}/>}  />
+              <Route path="/AccountEdit" element={<AccountEdit user={user}/>}  />
               <Route path="/Contact" element={<Contact user={user}/>}  />
               <Route path="/photography/:id" element={<PhotoDetail />}/>
           </Routes>
