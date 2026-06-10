@@ -1,0 +1,19 @@
+.edit {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputtitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.inputtitle label{
+    line-height: 30px;  /* match input height */
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
