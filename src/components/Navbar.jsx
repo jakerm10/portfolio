@@ -4,8 +4,15 @@ import "../css/Navbar.css";
 export default function Navbar({user}){
     return( 
         <nav className="navbar">  
-            <div className="texts">
+            <div className="texts dropdown-parent">
             <Link to="/Photography">Photography</Link>
+            <div className="dropdown">
+                <Link to="/Photography/Sports">Sports</Link>
+                <Link to="/Photography/Portraits">Portraits</Link>
+                <Link to="/Photography/Fitness">Fitness</Link>
+                <Link to="/Photography/Nature">Nature</Link>
+                <Link to="/Photography/Other">Other</Link>
+            </div>
             </div>
             <div className="texts">
             <Link to="/Process">My Process</Link>

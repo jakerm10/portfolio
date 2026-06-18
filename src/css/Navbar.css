@@ -29,3 +29,40 @@
 .texts{
     text-align: center;
 }
+
+.dropdown-parent {
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    flex-direction: column;
+    z-index: 100;
+    min-width: 150px;
+    box-shadow: 0 4px 8px rgba(1,43,85,0.2);
+    
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(1,43,85,.3);
+}
+
+.dropdown a:last-child{
+    border-bottom: none;
+}
+
+.dropdown-parent:hover .dropdown {
+    display: flex;
+}
+
+.box {
+    padding-top: 44px;
+}

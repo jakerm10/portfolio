@@ -32,8 +32,8 @@ export default function App() {
   const [user, setUser] = useState(null);  // ← move up here
 
   useEffect(() => {
-      preloadImages(vertst).then(() => setLoaded(true));
-  }, []);
+    setLoaded(true);
+}, []);
 
   useEffect(() => {  // ← move up here
       const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -49,13 +49,18 @@ export default function App() {
           <Navbar user={user}/>
           <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/photography" element={<Photography />} />
+              <Route path="/Photography" element={<Photography />} />
               <Route path="/Login" element={<Login />} />
               <Route path="/Process" element={<Process />} />
               <Route path="/Account" element={<Account user={user}/>}  />
               <Route path="/AccountEdit" element={<AccountEdit user={user}/>}  />
               <Route path="/Contact" element={<Contact user={user}/>}  />
-              <Route path="/photography/:id" element={<PhotoDetail />}/>
+              <Route path="/Photography/:id" element={<PhotoDetail />}/>
+              <Route path="/Photography/Portraits" element={<Photography category="Portraits" />}/>
+              <Route path="/Photography/Fitness" element={<Photography category="Fitness" />}/>
+              <Route path="/Photography/Sports" element={<Photography category="Sports" />}/>
+              <Route path="/Photography/Nature" element={<Photography category="Nature" />}/>
+              <Route path="/Photography/Other" element={<Photography category="Other" />}/>
           </Routes>
           <Footer key={location.pathname}/>
       </>
