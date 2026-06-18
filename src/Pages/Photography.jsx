@@ -17,6 +17,7 @@ export default function Photography({ category, main }) {
             {filtered.map(photo => {
                 const thumb = photo.type === 'vert' ? vertst[photo.thumb] : horizst[photo.thumb];
                 console.log(vertst["jace.jpg"]);
+                console.log(vertst["jace.jpg"].default);
                 return (
                     <Link to={`/photography/${photo.id}`} key={photo.id}>
                         <div className="imgcontainer">
