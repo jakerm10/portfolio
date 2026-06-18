@@ -49,7 +49,7 @@ export default function App() {
           <Navbar user={user}/>
           <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/Photography" element={<Photography />} />
+              <Route path="/Photography" element={<Photography main={true} />} />
               <Route path="/Login" element={<Login />} />
               <Route path="/Process" element={<Process />} />
               <Route path="/Account" element={<Account user={user}/>}  />
