@@ -16,6 +16,7 @@ export default function Photography({ category, main }) {
         <div className="gridimages">
             {filtered.map(photo => {
                 const thumb = photo.type === 'vert' ? vertst[photo.thumb] : horizst[photo.thumb];
+                console.log(vertst["jace.jpg"]);
                 return (
                     <Link to={`/photography/${photo.id}`} key={photo.id}>
                         <div className="imgcontainer">
