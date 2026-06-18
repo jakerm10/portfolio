@@ -17,3 +17,6 @@ const horizontalfulls = import.meta.glob('../assets/images/Fulls/Horiz/*', { eag
 export const horizsf = Object.fromEntries(
     Object.entries(horizontalfulls).map(([path, url]) => [path.split('/').pop(), url])
 );
+
+console.log("verticalthumbs", verticalthumbs);
+console.log("vertst", vertst);
