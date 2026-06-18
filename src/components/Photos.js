@@ -20,3 +20,4 @@ export const horizsf = Object.fromEntries(
 
 console.log("verticalthumbs", verticalthumbs);
 console.log("vertst", vertst);
+console.log(vertst["jace.jpg"]);
