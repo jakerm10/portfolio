@@ -1,5 +1,5 @@
 .mainimage{
-    width:96%;
+    width:75%;
     padding: 2% 0 2% 2%;
     pointer-events: none;
 }
@@ -27,7 +27,7 @@ h2{
     font-family: "itc-avant-garde-gothic-pro", sans-serif;
     font-size: 30px;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 0; 
 }
 
 h3{
