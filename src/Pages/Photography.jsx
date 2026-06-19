@@ -4,8 +4,8 @@ import "../css/Photography.css";
 import { Link } from 'react-router-dom';
 
 export default function Photography({ category, main }) {
-    let filtered = category 
-        ? photoData.filter(p => p.category === category) 
+    let filtered = category
+        ? photoData.filter(p => p.category === category)
         : photoData;
 
     if (main) {
@@ -15,9 +15,10 @@ export default function Photography({ category, main }) {
     return (
         <div className="gridimages">
             {filtered.map(photo => {
-                const thumb = photo.type === 'vert' ? vertst[photo.thumb] : horizst[photo.thumb];
-                console.log(vertst["jace.jpg"]);
-                console.log(vertst["jace.jpg"].default);
+                const thumb = photo.type === 'vert'
+                    ? vertst[photo.thumb]
+                    : horizst[photo.thumb];
+
                 return (
                     <Link to={`/photography/${photo.id}`} key={photo.id}>
                         <div className="imgcontainer">

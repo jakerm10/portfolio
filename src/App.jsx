@@ -56,7 +56,7 @@ export default function App() {
               <Route path="/AccountEdit" element={<AccountEdit user={user}/>}  />
               <Route path="/Contact" element={<Contact user={user}/>}  />
               <Route path="/Photography/:id" element={<PhotoDetail />}/>
-              <Route path="/Photography/Portraits" element={<Photography category="Portraits" />}/>
+              <Route path="/Photography/Portraits" element={<Photography category="Portrait" />}/>
               <Route path="/Photography/Fitness" element={<Photography category="Fitness" />}/>
               <Route path="/Photography/Sports" element={<Photography category="Sports" />}/>
               <Route path="/Photography/Nature" element={<Photography category="Nature" />}/>
