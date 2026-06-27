@@ -33,7 +33,7 @@ export default function Landing() {
         const clipInsideArrow = renderedHeight - arrowTop;
     
         setClipRight(adjustedRight);
-        setClipBottom(renderedHeight-180);
+        setClipBottom(renderedHeight-50);
         setClipArrow(clipInsideArrow+43);
     }, []);
 
