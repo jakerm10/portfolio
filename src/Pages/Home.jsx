@@ -58,7 +58,7 @@ export default function Landing() {
         const handleScroll = () => {
             if (!tick) {
                 requestAnimationFrame(() => {
-                    const alpha = Math.min(1, window.scrollY / 700);
+                    const alpha = Math.min(1, window.scrollY / 300);
                     const beta = Math.max(0, 1 - window.scrollY / 200);
                     if (sectionRef.current) sectionRef.current.style.backgroundColor = `rgba(1,43,85,${alpha})`;
                     if (arrowRef.current) arrowRef.current.style.opacity = beta;
