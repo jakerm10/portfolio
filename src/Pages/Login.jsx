@@ -18,7 +18,7 @@ export default function Login() {
     const handleEmailAuth = async () => {
         try {
             setError("");
-
+ 
             if (isLogin) {
                 await signInWithEmailAndPassword(
                     auth,

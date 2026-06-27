@@ -13,7 +13,7 @@
 }
 
 
-label{
+label{ 
     font-size: 30px;
     color: rgba(1,43,85,1);
     font-family: "itc-avant-garde-gothic-pro", sans-serif;
@@ -51,6 +51,8 @@ label{
     font-family: "itc-avant-garde-gothic-pro", sans-serif;
     background-color: rgba(1,43,85,1);
     border-radius: 10px;
+    padding: 0px;
+    margin: 0px;
 }
 
 .googlesignin{
@@ -62,6 +64,8 @@ label{
     background-color: white;
     border-radius: 4px;
     border: 3px solid rgba(1,43,85,1);
+    padding: 0px;
+    margin: 0px;
 }
 
 .needaccount{
@@ -73,6 +77,8 @@ label{
     font-family: "itc-avant-garde-gothic-pro", sans-serif;
     background-color: rgba(1,43,85,1);
     border-radius: 10px;
+    padding: 0px;
+    margin: 0px;
 }
 
 .needaccounttext{
