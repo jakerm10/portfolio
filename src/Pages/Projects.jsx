@@ -4,7 +4,7 @@ import { projectData } from "../data/projectData.js";
 
 export default function Projects() {
     return (
-        <div className="gridimages">
+        <div className="projimages">
             {projectData.map(project => (
                 <Link to={`/Projects/${project.id}`} key={project.id}>
                     <div className="projcontainer">
