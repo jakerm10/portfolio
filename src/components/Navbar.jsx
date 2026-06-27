@@ -15,7 +15,7 @@ export default function Navbar({user}){
             </div>
             </div>
             <div className="texts">
-            <Link to="/Process">My Process</Link>
+            <Link to="/Projects">Projects</Link>
             </div>
             <div className="texts">
             <Link to="/"> Jake Moore </Link>

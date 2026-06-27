@@ -7,10 +7,11 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Login from "./Pages/Login.jsx";
 import Contact from "./Pages/Contact.jsx";
-import Process from "./Pages/Process.jsx";
+import Projects from "./Pages/Projects.jsx";
 import Account from "./Pages/Account.jsx";
 import AccountEdit from "./Pages/AccountEdit.jsx"
 import PhotoDetail from "./Pages/PhotoDetail";
+import ProjectDetail from "./Pages/ProjectDetail";
 import { auth } from './firebase.js';
 import { onAuthStateChanged } from 'firebase/auth';
 console.log(auth);
@@ -51,16 +52,17 @@ export default function App() {
               <Route path="/" element={<Home />} />
               <Route path="/Photography" element={<Photography main={true} />} />
               <Route path="/Login" element={<Login />} />
-              <Route path="/Process" element={<Process />} />
+              <Route path="/Projects" element={<Projects />} />
+              <Route path="/Projects/:id" element={<ProjectDetail />}/>
               <Route path="/Account" element={<Account user={user}/>}  />
               <Route path="/AccountEdit" element={<AccountEdit user={user}/>}  />
               <Route path="/Contact" element={<Contact user={user}/>}  />
-              <Route path="/Photography/:id" element={<PhotoDetail />}/>
               <Route path="/Photography/Portraits" element={<Photography category="Portrait" />}/>
               <Route path="/Photography/Fitness" element={<Photography category="Fitness" />}/>
               <Route path="/Photography/Sports" element={<Photography category="Sports" />}/>
               <Route path="/Photography/Nature" element={<Photography category="Nature" />}/>
               <Route path="/Photography/Other" element={<Photography category="Other" />}/>
+              <Route path="/Photography/:id" element={<PhotoDetail />}/>
           </Routes>
           <Footer key={location.pathname}/>
       </>

@@ -31,7 +31,7 @@ export default function Account({user}) {
 
     return(
         <div className="spacing">
-            <h1>{userData?.name ? `Hello,  ${userData.name}` : "Hello!"}</h1>
+            <h1>{userData?.displayName ? `Hello,  ${userData.displayName}!` : "Hello!"}</h1>
             <br></br>
             <p className="subhead">Your Information:</p>
             <p className="info">
@@ -43,7 +43,7 @@ export default function Account({user}) {
                 <br></br>
             </p>
             <Link to="/AccountEdit">
-                <button>Edit</button>
+                <button className="editbutton">Edit</button>
             </Link>
             <button className="logoutbutton" onClick={handleSignOut}>Sign out</button>
             <p className="bottomtext">

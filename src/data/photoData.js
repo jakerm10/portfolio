@@ -1,5 +1,3 @@
-import { vertsf, horizsf } from "../components/Photos.js";
-
 export const photoData = [
     { id: 'anya-nelson', thumb: 'anyanelson.jpg', full: 'anyanelson.jpg', index: 57, type: 'vert', category: 'Sports', title: 'Anya Nelson', event: 'Colorado VS Iowa State', location: 'CU South Campus', date: '2/28/25', other: '', description: '', main: 'yes' },
     { id: 'maddie', thumb: 'maddie.jpg', full: 'maddie.jpg', index: 50, type: 'vert', category: 'Sports', title: 'Maddie Shoup', event: 'Colorado VS Jacksonville', location: 'Prentup Field', date: '5/8/26', other: 'NCAA Tournament Round One', description: '', main: 'yes' },

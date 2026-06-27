@@ -1,0 +1,57 @@
+.gridimages{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: white;
+    padding: 0.25%;
+    padding-top: 3%;
+    column-gap: 0.5%;
+    row-gap: 9px;
+    padding-bottom: .3%;
+}
+
+.projcontainer{
+    position: relative;
+    overflow: hidden;
+}
+
+.images{
+    width: 100%;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.textbox{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.text{
+    background-color: rgba(1,43,85,1);
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    color: white;
+    font-size: 200%;
+    padding: 1% 3%;
+    white-space: nowrap;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.projcontainer:hover .images{
+    opacity: 0.5;
+}
+
+.projcontainer .textbox{
+    padding-top: 200px;
+    opacity: 1;
+}
