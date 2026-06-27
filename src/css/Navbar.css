@@ -1,7 +1,7 @@
 .navbar{
     display: flex;
     background: rgba(255, 255, 255, 1);
-    font-size: 35px;
+    font-size: clamp(1rem, 2vw, 3rem);
     color: rgba(1,43,85,1);
     font-family: "itc-avant-garde-gothic-pro", sans-serif;
     width: 100%; 
@@ -11,7 +11,7 @@
     padding: 0 20px;
     top: 0;
     box-sizing: border-box;  
-    height: 5%;  
+    height: 5%;   
 }
 
 .navbar a{

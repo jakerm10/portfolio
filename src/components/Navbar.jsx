@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "../css/Navbar.css";
 
 export default function Navbar({user}){
-    return( 
+    return(  
         <nav className="navbar">  
             <div className="texts dropdown-parent">
             <Link to="/Photography">Photography</Link>
