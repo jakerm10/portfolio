@@ -92,7 +92,7 @@
 .container h1{
     margin:60px;
     padding-top: 0px;
-    font-size: 100px;
+    font-size:clamp(2.5rem,6vw,8rem);
     text-align: center;
     color: white;
     margin-bottom: 10px;
@@ -101,13 +101,15 @@
 .container p{
     margin:0px;
     padding-top: 0px;
-    font-size: 20px;
+    font-size:clamp(1rem,1.2vw,1.25rem);
+    margin:0 auto;
+    max-width: 35rem;
+    padding: 0 5rem;
     text-align: center;
     color: white;
     font-family: "lexia-variable", sans-serif;
     font-variation-settings: "wght" 300;
     letter-spacing: 1px;
-    margin: 20%;
     margin-top: 0%;
     margin-bottom: 10%;
 }
