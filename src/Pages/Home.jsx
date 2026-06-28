@@ -89,9 +89,6 @@ export default function Landing() {
                         Jake<br />Moore
                     </div>
                 </div>
-                <div>
-                    <FiArrowDownCircle ref={arrowDarkRef} className="arrowdark" size={72}/>
-                </div>
                 <div ref={arrowRef} className="arrow">
                     <FiArrowDownCircle size={72}/>
                 </div>
