@@ -3,7 +3,7 @@
     grid-template-columns: repeat(4, 1fr);
     background-color: white;
     padding: 0.25%;
-    padding-top: 2.7%;
+    padding-top: clamp(2.5rem, 3vw, 5rem);
     column-gap: 0.5%;
     row-gap: .15%;
     padding-bottom: .5%;
