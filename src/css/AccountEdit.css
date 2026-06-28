@@ -38,7 +38,6 @@ label{
 }
 
 input{
-    margin-top: 7px;
     height: 35px;
     line-height: 10px;
     font-size: 130%;
@@ -47,6 +46,10 @@ input{
     font-family: "itc-avant-garde-gothic-pro", sans-serif;
     border: 2px solid rgba(1,43,85,1);
     border-radius: 5px;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin: 0;
+    margin-top: 7px;
 }
 
 form{
