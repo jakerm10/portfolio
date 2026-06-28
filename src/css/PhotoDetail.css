@@ -1,7 +1,8 @@
 .mainimage{
     width:75%;
-    padding: 2% 0 2% 2%;
+    padding: 0% 0 2% 2%;
     pointer-events: none;
+    padding-top: clamp(.5rem, 1vw, 1.5rem);
 }
 
 .box{
@@ -12,7 +13,7 @@
     width: 50%;
 }
 
-h1{
+.phototitletext{
     text-align: center;
     color: rgba(1,43,85,1);
     font-family: "itc-avant-garde-gothic-pro", sans-serif;
@@ -46,4 +47,50 @@ p{
     font-size: 25px;
     margin-top: 0;
     padding: 10% 10%;
+}
+
+@media (max-width: 768px) {
+
+    .box {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 0px;
+        margin-top: 0px;
+    }
+
+    .box > div {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .mainimage {
+        width: 90%;
+        padding: 2rem 0;
+        margin: 0 auto;
+        display: block;
+        padding-top: clamp(.5rem, 2vw, 5rem);
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    .phototitletext {
+        font-size: clamp(2.5rem, 8vw, 4rem);
+        margin-top: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    h2 {
+        font-size: clamp(1.25rem, 4vw, 2rem);
+    }
+
+    h3 {
+        font-size: clamp(1rem, 3vw, 1.5rem);
+    }
+
+    p {
+        font-size: clamp(1rem, 3vw, 1.4rem);
+        padding: 2rem 1.5rem;
+    }
 }

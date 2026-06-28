@@ -16,7 +16,7 @@ export default function PhotoDetail() {
                 <img src={full} className="mainimage" />
             </div>
             <div>
-                <h1>{photo.title}</h1>
+                <h1 className='phototitletext'>{photo.title}</h1>
                 {(photo.event.length > 0 || photo.date.length > 0) && (
                     <h3>
                         {photo.event.length > 0 && photo.event}
