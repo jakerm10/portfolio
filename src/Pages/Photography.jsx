@@ -24,7 +24,7 @@ export default function Photography({ category, main }) {
                         <div className="imgcontainer">
                             <img className="images" src={thumb} alt="" />
                             <div className="textbox">
-                                <div className="text">{photo.title}</div>
+                                <div className="imagetext">{photo.title}</div>
                             </div>
                         </div>
                     </Link>

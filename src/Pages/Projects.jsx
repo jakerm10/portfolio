@@ -10,7 +10,7 @@ export default function Projects() {
                     <div className="projcontainer">
                         <img className="images" src={project.image} alt="" />
                         <div className="textbox">
-                            <div className="text">{project.title}</div>
+                            <div className="imagetext">{project.title}</div>
                         </div>
                     </div>
                 </Link>
