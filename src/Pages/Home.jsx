@@ -61,7 +61,7 @@ export default function Landing() {
             if (!tick) {
                 requestAnimationFrame(() => {
                     const t = Math.min(window.innerWidth / 1920, 1);
-                    const fadeMultiplier = 0.2 + (0.7 - 0.2) * t;
+                    const fadeMultiplier = 0.05 + (0.7 - 0.05) * t;
                     const fade = window.innerHeight * fadeMultiplier;
                     const alpha = Math.min(1, window.scrollY / fade);
                     const beta = Math.max(0, 1 - window.scrollY / 200);
