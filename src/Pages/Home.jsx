@@ -62,7 +62,7 @@ export default function Landing() {
         const handleScroll = () => {
             if (!tick) {
                 requestAnimationFrame(() => {
-                    const fade=window.innerHeight*0.7;
+                    const fade=window.innerHeight*0.4;
                     const alpha = Math.min(1, window.scrollY / fade);
                     const beta = Math.max(0, 1 - window.scrollY / 200);
                     if (sectionRef.current) sectionRef.current.style.backgroundColor = `rgba(1,43,85,${alpha})`;

@@ -181,7 +181,8 @@
 }
 
 .cstext-layer{
-    padding-left: clamp(0.2rem, 3vw, 4rem);
+    padding-left: 0px;
+    padding-right: clamp(0.2rem, 3vw, 4rem);
     color: white;
     font-size:clamp(2.5rem,6vw,8rem);
     font-family: "anonymous-pro", monospace;
