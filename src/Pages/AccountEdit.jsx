@@ -44,7 +44,7 @@ export default function AccountEdit({ user }) {
 
     return (
         <div className="Edit">
-            <h1>Your Information</h1>
+            <h1 className="accountedittitle">Your Information</h1>
             <form onSubmit={handleSubmit}>
             <div className="inputtitle">
                     <label>Name:</label>

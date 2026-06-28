@@ -114,14 +114,14 @@ export default function Login() {
 
             <div className="inputrow">
                 <label>Email:</label>
-                <input className="emailinput" type="email" placeholder=" email@domain.com" value={email} onChange={(e) => setEmail(e.target.value)} />
+                <input className="emailinput" type="email" placeholder="email@domain.com" value={email} onChange={(e) => setEmail(e.target.value)} />
             </div>
 
             <br></br> 
 
             <div className="inputrow">
                 <label>Password:</label>
-                <input className="emailinput" type="password" placeholder=" Password" value={password} onChange={(e) => setPassword(e.target.value)} />
+                <input className="emailinput" type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
             </div>
 
             <div className="errormessage">

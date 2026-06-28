@@ -5,6 +5,17 @@
     align-items: center;
 }
 
+.accountedittitle{
+    margin: 0;
+    padding: 0;
+    color: rgba(1,43,85,1);
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-size:clamp(4rem,6vw,8rem);
+    padding-top:clamp(5rem,7vw,9rem);
+    padding-bottom: 3%;
+    text-align: center;
+}
+
 .inputtitle {
     display: flex;
     align-items: center;
@@ -31,21 +42,27 @@ label{
 
 input{
     margin-top: 7px;
-    height: 20px;
+    height: 35px;
     line-height: 10px;
+    font-size: 130%;
+    width: 50%;
+    color: rgba(1, 43, 85, 1);
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    border: 2px solid rgba(1,43,85,1);
+    border-radius: 5px;
 }
 
 button{
-    width: 20%;
+    width: clamp(12rem, 17vw, 20rem);
     padding: 1%;
     background-color: rgba(1, 43, 85, 1);
     color: white;
     font-family: "itc-avant-garde-gothic-pro", sans-serif;
-    font-size: 250%;
+    font-size: clamp(2rem, 3vw, 3.5rem);
     border-radius: 25px;
     border-width: 0;
-    margin: 50px;
-    margin-top: 120px;
+    margin-top: 35px;
+    margin-bottom: 10%;
 }
 
 h1{

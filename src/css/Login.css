@@ -35,6 +35,11 @@ label{
     align-items: center;
 }
 
+.inputrow ::placeholder{
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    color: rgba(1,43,85,0.6);
+}
+
 .emailinput{
     line-height: 30px;
     height: 25px;
@@ -43,6 +48,7 @@ label{
     border: 2px solid rgba(1,43,85,1);
     border-radius: 5px;
     text-indent: 4px;
+    width: 230px;
 }
 
 .loginbutton{
