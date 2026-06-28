@@ -1,6 +1,5 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import {useState, useEffect} from "react"
-import {vertst} from './components/Photos.js';
 import Home from "./Pages/Home";
 import Photography from "./Pages/Photography";
 import Navbar from "./components/Navbar";

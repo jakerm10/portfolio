@@ -1,4 +1,6 @@
 import Webbie from "../assets/images/background.jpg";
+import profile from "../assets/images/profile.jpeg";
+import grad from "../assets/images/grad.jpeg";
 import "../css/Home.css";
 import { useEffect, useRef, useState, useCallback } from "react";
 import { FiArrowDownCircle } from "react-icons/fi";
@@ -33,8 +35,10 @@ export default function Landing() {
         const clipInsideArrow = renderedHeight - arrowTop;
     
         setClipRight(adjustedRight);
-        setClipBottom(renderedHeight-50);
+        setClipBottom(renderedHeight-10);
         setClipArrow(clipInsideArrow+43);
+        console.log(adjustedRight);
+        console.log(renderedHeight);
     }, []);
 
     useEffect(() => {
@@ -58,7 +62,8 @@ export default function Landing() {
         const handleScroll = () => {
             if (!tick) {
                 requestAnimationFrame(() => {
-                    const alpha = Math.min(1, window.scrollY / 300);
+                    const fade=window.innerHeight*0.7;
+                    const alpha = Math.min(1, window.scrollY / fade);
                     const beta = Math.max(0, 1 - window.scrollY / 200);
                     if (sectionRef.current) sectionRef.current.style.backgroundColor = `rgba(1,43,85,${alpha})`;
                     if (arrowRef.current) arrowRef.current.style.opacity = beta;
@@ -91,12 +96,22 @@ export default function Landing() {
                     <FiArrowDownCircle size={72}/>
                 </div>
             </div>
-            <div className="info">
-                <div className="container">
-                    <h1 className="phototext">photographer</h1>
-                    <h1 className="codetext">&lt;coder&gt;</h1>
-                    <p>Creative Media intern at University of Colorado Boulder, specializing in women's soccer, track, and men's basketball. Always trying something new and trendy. Live Laugh Love my Sony A1 and Fujifilm Polaroid</p>
-                    <p>Computer Science major at University of Colorado Boulder, specializing in databases, UI, and UX. Trying to make my life easier through code. Fun fact: I made this website!</p>
+            <div className="photogrid">
+                <div className="phototext-layer">
+                    Photographer
+                    <div className="textone">
+                     Creative Media intern at University of Colorado Boulder, specializing in women's soccer, track, and men's basketball. Always trying something new and trendy. Live Laugh Love my Sony A1 and Fujifilm Polaroid
+                    </div>
+                </div>
+                <img src={profile} className="profile"/>
+            </div>
+            <div className="photogrid">
+            <img src={grad} className="hs"/>
+                <div className="cstext-layer">
+                    &lt;coder&gt;
+                    <div className="textone">
+                    Computer Science major at University of Colorado Boulder, specializing in databases, UI, and UX. Trying to make my life easier through code. Fun fact: I made this website!
+                    </div>
                 </div>
             </div>
 
