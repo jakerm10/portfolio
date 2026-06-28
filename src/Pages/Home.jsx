@@ -37,8 +37,6 @@ export default function Landing() {
         setClipRight(adjustedRight);
         setClipBottom(renderedHeight-10);
         setClipArrow(clipInsideArrow+43);
-        console.log(adjustedRight);
-        console.log(renderedHeight);
     }, []);
 
     useEffect(() => {
@@ -62,7 +60,9 @@ export default function Landing() {
         const handleScroll = () => {
             if (!tick) {
                 requestAnimationFrame(() => {
-                    const fade=window.innerHeight*0.2;
+                    const t = Math.min(window.innerWidth / 1920, 1);
+                    const fadeMultiplier = 0.2 + (0.7 - 0.2) * t;
+                    const fade = window.innerHeight * fadeMultiplier;
                     const alpha = Math.min(1, window.scrollY / fade);
                     const beta = Math.max(0, 1 - window.scrollY / 200);
                     if (sectionRef.current) sectionRef.current.style.backgroundColor = `rgba(1,43,85,${alpha})`;
