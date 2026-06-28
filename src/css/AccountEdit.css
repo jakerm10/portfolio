@@ -30,11 +30,7 @@
     align-items: center;
 }
 
-form{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
+
 
 label{
     font-size: 250%;
@@ -50,6 +46,12 @@ input{
     font-family: "itc-avant-garde-gothic-pro", sans-serif;
     border: 2px solid rgba(1,43,85,1);
     border-radius: 5px;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 button{
