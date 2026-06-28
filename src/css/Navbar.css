@@ -55,7 +55,7 @@
 .dropdown a {
     display: block;
     padding: 10px 15px;
-    font-size: clamp(.8rem, 2vw, 2.5rem);
+    font-size: clamp(.8rem, 1.75vw, 2rem);
     border-bottom: 1px solid rgba(1,43,85,.3);
 }
 

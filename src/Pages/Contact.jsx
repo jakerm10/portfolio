@@ -55,32 +55,24 @@ export default function Contact({user}) {
 
     return (
         
-        <div>
-            <h1 className="title">Contact Me</h1>
-            <h2>Send me a message to book an appointment, change account details, <br></br>or any other questions you might have</h2>
-            <p className="subtext">Create an account to save your information</p>
+        <div className="columnforcenter">
+            <h1 className="titlecontact">Contact Me</h1>
+            <h2 className="subtitlecontact">Send me a message to book an appointment, change account details, or any other questions you might have</h2>
             <form onSubmit={handleSubmit}>
                 <label className="formclass">
                     Name:
-                    <br></br>
                     <input className="namebox" type="text" id="name" name="name" value={name} onChange={handleNameChange} required/>
                 </label>
-                <br></br>
                 <label className="formclass">
                     Email:
-                    <br></br>
                     <input className="emailbox" type="email" id="email" name="email" value={email} onChange={handleEmailChange} required/>
                 </label>
-                <br></br>
                 <label className="formclass">
                     Phone:
-                    <br></br>
                     <input className="phonebox" type="text" id="phone" name="phone" value={phone} onChange={handlePhoneChange}/>
                 </label>
-                <br></br>
                 <label className="formclass">
                     Inquiry Type:
-                    <br></br>
                     <select className="inquirybox" id="reason" name="reason" value={reason} onChange={handleReasonChange} required>
                         <option value="">Select</option>
                         <option value="Booking">Booking</option>
@@ -88,15 +80,10 @@ export default function Contact({user}) {
                         <option value="Other">Other</option>
                     </select>
                 </label>
-                <br></br>
                 <label className="formclass">
                     Message:
-                    <br></br>
                     <textarea className="messagebox" id="message" name="message" value={message} onChange={handleMessageChange} style={{ overflow: "hidden" }} required/>
                 </label>
-                <br></br>
-                <br></br>
-                <br></br>
                 <div className="submitc">
                     <button className="submitb">Send</button>
                 </div>
