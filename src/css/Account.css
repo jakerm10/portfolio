@@ -5,13 +5,24 @@
     align-items: center;
 }
 
+.accounttitle{
+    margin: 0;
+    padding: 0;
+    color: rgba(1,43,85,1);
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-size:clamp(4rem,6vw,8rem);
+    padding-top:clamp(5rem,7vw,9rem);
+    padding-bottom: 1%;
+    text-align: center;
+}
+
 .logoutbutton{
-    width: 15%;
+    width: clamp(12rem, 17vw, 20rem);
     padding: 1%;
     background-color: rgba(1, 43, 85, 1);
     color: white;
     font-family: "itc-avant-garde-gothic-pro", sans-serif;
-    font-size: 250%;
+    font-size: clamp(2rem, 3vw, 3.5rem);
     border-radius: 25px;
     border-width: 0;
     margin-top: 35px;
@@ -38,5 +49,6 @@
 .editbutton{
     margin: 0;
     margin-top: 30px;
-    width: 200px;
+    width: clamp(10rem, 13vw, 16rem);
+    font-size:clamp(1.5rem,2.5vw,3rem);
 }

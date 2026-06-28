@@ -31,7 +31,7 @@ export default function Account({user}) {
 
     return(
         <div className="spacing">
-            <h1>{userData?.displayName ? `Hello,  ${userData.displayName}!` : "Hello!"}</h1>
+            <h1 className="accounttitle">{userData?.displayName ? `Hello,  ${userData.displayName}!` : "Hello!"}</h1>
             <br></br>
             <p className="subhead">Your Information:</p>
             <p className="info">
