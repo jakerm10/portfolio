@@ -110,7 +110,7 @@ export default function Login() {
 
     return (
         <div className="login">
-            <h1>{isLogin ? "Log In" : "Sign Up"}</h1>
+            <h1 className="logintitle">{isLogin ? "Log In" : "Sign Up"}</h1>
 
             <div className="inputrow">
                 <label>Email:</label>
